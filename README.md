@@ -6,6 +6,7 @@
 
 - Versão mais atualizada do [Node](https://nodejs.org/en/)
 - Versão mais atualizada do yarn, para instala-la rode o seguinte comando no terminal:
+
 ```
 npm install -g yarn
 ```
@@ -13,11 +14,13 @@ npm install -g yarn
 ### Como começar
 
 - Na primeira vez que clonar o projeto, rode o seguinte comando no terminal da raiz do projeto para instalar as dependencias: 
+
 ```
 yarn
 ```
 - Para inciar o servidor rode o seguinte comando:
-````
+
+```
 yarn start
 ```
 
