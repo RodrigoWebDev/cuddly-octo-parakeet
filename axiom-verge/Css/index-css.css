@@ -1,3 +1,27 @@
+img{
+    width: 100%;
+    height: auto;
+}
+
 body{
-	
+	margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header-navegaçao{
+    text-align: center;
+    height: auto;
+}
+.box-nav{
+    background-color: #1d1d1d;
+    height: 54px;
+    color:#DADADA;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-transform:uppercase;
+}
+.box-nav i{
+    margin-right:5px;
 }
