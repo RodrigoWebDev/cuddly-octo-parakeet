@@ -7,13 +7,18 @@ body{
 	margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+	background-image: url(../images/WindowBackground.jpg);
+	background-position: top center;
+	background-size: auto;
+    background-attachment: scroll;
+    background-repeat: repeat;
 }
 
 .header-navegacao{
     text-align: center;
     height: auto;
 }
-.box-nav{
+.box-nav-mobile{
     background-color: #1d1d1d;
     height: 54px;
     color: #DADADA;
@@ -22,6 +27,59 @@ body{
     justify-content: center;
     text-transform: uppercase;
 }
-.box-nav i{
+.box-nav-mobile i{
     margin-right: 5px;
+}
+
+.box-nav-desktop{
+ display: none;       
+}
+
+@media (min-width:1024px){
+    .box-nav-mobile{
+        display: none;
+    }
+	
+	.container{
+		max-width: 1024px;
+		width: 1024px;
+	}
+
+	body{
+		display: flex;
+		justify-content: center;
+	}
+
+	img{
+		display: block;
+	}
+
+    .box-nav-desktop{
+        display: flex;
+        height: 44.4px;
+        background-color: #1d1d1d;
+		align-items: center;
+    }
+
+    .box-nav-desktop ul{
+        list-style: none;
+        display:flex;
+        margin: 0px;
+		align-items: center;
+		padding: 0px;
+    }
+	.box-nav-desktop li{
+        font-size: 12px;
+		text-transform: uppercase
+		
+    }
+	.box-nav-desktop li a{
+        color: #DADADA;
+		text-decoration: none;
+    }
+
+    .header-navegacao{
+        text-align: center;
+        height: auto;
+    }
 }
