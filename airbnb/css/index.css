@@ -4,6 +4,8 @@
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin: 0px;
 }
 
 .flex{
@@ -55,4 +57,75 @@ body{
 
 .block_4{
 	background-color: rgb(188, 26, 110);
+}
+
+.menu-header{
+	height: 80px;
+	box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.main-viagem{
+	margin-left: 10px;
+}
+
+.image-menu a img{
+	width: 111px;
+	height: 60px;
+}
+
+.image-menu a{
+	width: 84px;
+	height: 65px;
+}
+
+.input-menu input{
+	width: 300px;
+	height: 48px;
+	border: none;
+	border-radius: 40px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 8%), 0px 4px 12px rgb(0 0 0 / 5%);
+	padding-left: 10px;
+}
+
+
+.i-input-serch{
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 257px;
+    background: #FF385C;
+	height: 32px;
+    width: 32px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+	color: white;
+}
+
+.input-menu{
+	position: relative;
+}
+
+.header-direita a{
+	text-decoration: none;
+	color: black;
+	padding: 12px;
+}
+
+.header-direita i{
+	padding: 12px;
+}
+
+.header-direita a:hover{
+
+	background-color: #F7F7F7;
+	border-radius: 22px;
+}
+
+.header-direita i:hover{
+	background-color: #F7F7F7;
+	border-radius: 22px;
 }

@@ -1,0 +1,18 @@
+body{
+	font-family: arial;
+	background-image: url(../images/back-image.jpg);
+}
+
+.messagem_javascript{
+	text-align: center;
+	color: white;
+}
+.img-center{
+	text-align: center;
+}
+img{
+	width: 300px;
+	height: 300px;
+	border: 10px solid black;
+	border-radius: 20px;
+}
