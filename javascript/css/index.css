@@ -16,3 +16,35 @@ img{
 	border: 10px solid black;
 	border-radius: 20px;
 }
+
+.alimentar_bebe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dce9be;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+   
+}
+
+.botton-alimentar{
+    margin-top: 13px;
+    border-radius: 20px;
+    width: 100px;
+}
+
+.background_alimentar_bebe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#input-comida{
+    border-radius: 20px;
+}
+
+#input-comida::placeholder{
+    text-align: center
+}

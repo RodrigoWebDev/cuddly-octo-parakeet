@@ -1,12 +1,14 @@
-var dados = {
-    nome1:"Daniel",
-    nome2:"Rodrigo",
-    idade1:"16",
-    idade2:"24"
-};
+var comidaProibida = "Veneno";
 
-function dados_persoas(){
-    return `${dados.nome1} tem ${dados.idade1}`
-}
 
-console.log(dados_persoas());
+
+document.getElementById("botton-alimentar").addEventListener("click", function(){
+    var comida = document.getElementById("input-comida").value;
+    
+    if(comida === comidaProibida){
+        alert("O bebê não pode comer "+comidaProibida);
+    }else{
+        alert("O bebê pode comer "+comida);
+    }
+});
+
