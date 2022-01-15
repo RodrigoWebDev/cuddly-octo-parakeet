@@ -19,6 +19,10 @@ body{
     text-align: center;
 }
 
+#lampada-ligada{
+    display: none;
+}
+
 .switch{
     display: flex;
     justify-content: center;
