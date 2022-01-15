@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu site</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="Lista">
+        <h1>Do Again List</h1>
+        <form id="ValorDoInputForm">
+            <input type="text" placeholder="What do you want to again?" class="item_da_lista">
+        </form>
+    </div>
+
+    <ul id="lista"></ul>
+
+    <script>
+        const lista_nomes = []; 
+        
+        function retornaValor(){
+             return document.getElementsByClassName("item_da_lista")[0].value;
+        }
+
+        document.getElementById("ValorDoInputForm").addEventListener("submit",function(evento){
+            evento.preventDefault();
+             
+
+            if(retornaValor().length){
+                let valorDoInput = document.getElementsByClassName("item_da_lista")[0].value;
+                lista_nomes.push(valorDoInput);
+                console.log(lista_nomes)
+                document.getElementById("lista").innerHTML = ""
+                lista_nomes.forEach(function(item){
+                    document.getElementById("lista").innerHTML+=`<li>${item} <span class="excluir">x</span></li>`
+                })
+                const excluirList = Array.from(document.getElementsByClassName("excluir"))
+
+                excluirList.forEach(function(item){
+                    item.addEventListener("click", function(){
+                        console.log("Excluido");
+                        lista_nomes.filter(function(item){
+                            return lista_nomes != item
+                        })   
+                    })
+                })
+                /*document.getElementsByClassName("excluir").addEventListener("click" ,function(){
+                    console.log("ASJDLASJDLKASJKLDJLKAJSKLDJKLASJKLDJKLASJDKLJASLKDJKLASJDKLJLKASJLDKJKASJKLDJLKJ");
+                })*/      
+            }else{
+                alert("Sem nada nao fusiona")
+            }
+            });
+       
+    </script>
+</body>
+</html>

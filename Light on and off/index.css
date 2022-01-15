@@ -1,0 +1,30 @@
+body{
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    background-color: #383838;
+}
+
+.background-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 300px;
+    height: 80px;
+    border-radius: 30px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.switch{
+    display: flex;
+    justify-content: center;
+}
+
+#on-off{
+    padding: 10px 30px;
+    font-size: 20px;
+}
