@@ -1,13 +1,26 @@
-let estaLigado = false
+    let estaLigado = false
 
-document.querySelector("#on-off").addEventListener("click",function(){
+    pegar("#on-off").addEventListener("click",function(){
+
     if(estaLigado){
-        document.querySelector("#lampada-desligada").style.display="inline"
-        document.querySelector("#lampada-ligada").style.display="none" 
-        estaLigado = false 
+        pegar("#lampada-desligada").style.display="inline"
+        pegar("#lampada-ligada").style.display="none" 
+        estaLigado = false
+        pegar("#on-off").innerText="Ligar"
+        pegar("body").style.backgroundColor="#383838"
     }else{
-        document.querySelector("#lampada-desligada").style.display="none"
-        document.querySelector("#lampada-ligada").style.display="inline" 
-        estaLigado = true   
+        pegar("#lampada-desligada").style.display="none"
+        pegar("#lampada-ligada").style.display="inline" 
+        estaLigado = true
+        pegar("#on-off").innerText="Desligar"
+        pegar("body").style.backgroundColor="#ffffff"
     }
 })
+
+function pegar(elemento){
+   return document.querySelector(elemento)
+}
+
+function PlayAudio(){
+    return document.querySelector()
+}
