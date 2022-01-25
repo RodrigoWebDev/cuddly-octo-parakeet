@@ -6,11 +6,11 @@ header{
 }
 
 h1{
-    margin: 0px;
+    margin-bottom: -40px;
 }
 
 h3{
-    margin-top: 0px; 
+    margin-bottom: 7px;
  }
 
 body{
@@ -28,18 +28,17 @@ body{
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 400px;
-    height: 220px;
-    border-radius: 30px;
+    width: 440px;
+    height: 250px;
 }
 
 #senha{
-    margin-top: 7px;
+    margin-top: 9px;
 }
 
 input{
     display: block;
-    font-size: 30px;
+    font-size: 24pt;
 }
 
 .flex{
@@ -66,4 +65,17 @@ input{
     color: white;
     background-color: #c0c0c0;
     border: solid #c0c0c0 1px;
+}
+
+.Dev{
+    position: absolute;
+    left: 22px;
+    top: 753px;
+    font-size: 20px;
+    color: white;
+    background-color: #e09100;
+    width: 150px;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 5px;
 }

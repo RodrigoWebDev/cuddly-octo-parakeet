@@ -1,3 +1,6 @@
+let daniel_usuario = "LGameDev";
+let daniel_senha = 123;
+
 get("#loginForm").addEventListener("input", function(){
     if(getValueUsuario().length && getValueSenha().length){
         get("#login-buttom").style.backgroundColor="orange"
@@ -11,11 +14,15 @@ get("#loginForm").addEventListener("input", function(){
 
 get("#loginForm").addEventListener("submit", function(evento){
     evento.preventDefault()
-
 })
 
 get("#login-buttom").addEventListener("click", function(){
-   console.log("sdasdasdasdasdasdasdadsd")         
+    debugger
+    if(getValueSenha() == daniel_senha && getValueUsuario() === daniel_usuario){
+        console.log("Entrou")
+    }else{
+        console.log("KKKKKK")
+    }       
 }) 
 
 function get(elemento){
